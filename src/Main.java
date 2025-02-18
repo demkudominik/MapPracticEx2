@@ -13,5 +13,6 @@ public class Main {
         ProdukteController produkteController = new ProdukteController(produkteRepository);
         UI ui = new UI(produkteController, charaktereController);
         ui.menu();
+
     }
 }
