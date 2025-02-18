@@ -3,11 +3,6 @@ package Model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Charaktere {
-package Problem2.Model;
-
-import java.util.ArrayList;
-import java.util.List;
 
     public class Charaktere {
         private int id;
@@ -79,4 +74,4 @@ import java.util.List;
         }
     }
 
-}
+
