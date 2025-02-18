@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class ProdukteRepositroy {
+public class ProdukteRepository {
     private final List<Produkte> produkte;
     public ProdukteRepository(List<Produkte> produkte) {
         this.produkte = produkte;
