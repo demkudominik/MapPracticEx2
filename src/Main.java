@@ -3,7 +3,7 @@ import Controller.CharaktereController;
 import Controller.ProdukteController;
 import Repository.CharaktereRepository;
 import Repository.ProdukteRepository;
-
+import UI.UI;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,6 +11,7 @@ public class Main {
         ProdukteRepository produkteRepository = new ProdukteRepository();
         CharaktereController charaktereController = new CharaktereController(charaktereRepository);
         ProdukteController produkteController = new ProdukteController(produkteRepository);
-
+        UI ui = new UI(produkteController, charaktereController);
+        ui.menu();
     }
 }

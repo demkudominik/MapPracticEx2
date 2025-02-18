@@ -14,24 +14,24 @@ public class ProdukteRepository {
 
     public ProdukteRepository() {this.produkte = new ArrayList<>();}
 
-    @Override
+
     public void add(Produkte entity) {
         produkte.add(entity);
     }
 
-    @Override
+
     public void delete(String entity) {
         produkte.removeIf(medkament -> Objects.equals(medkament.getName(), entity));
     }
 
-    @Override
+
     public void update(Produkte entity1, Produkte entity2) {
         if(produkte.remove(entity1)) {
             produkte.add(entity2);
         }
     }
 
-    @Override
+
     public Produkte get(String entity) {
         for(Produkte p : produkte) {
             if(Objects.equals(p.getName(), entity)) {
@@ -41,7 +41,7 @@ public class ProdukteRepository {
         return null;
     }
 
-    @Override
+
     public List<Produkte> getAll() {
         return produkte;
     }
